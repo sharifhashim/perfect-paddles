@@ -1,0 +1,54 @@
+@font-face {
+  font-family:'karla bold';
+  src: url('fonts/karla-bold.ttf');
+}
+@font-face {
+  font-family: 'karla regular';
+  src: url('fonts/karla-regular.ttf');
+}
+@font-face {
+  font-family: 'karla bold italic';
+  src: url('fonts/karla-bolditalic.ttf');
+}
+@font-face {
+  font-family: 'karla italic';
+  src: url('fonts/karla-italic.ttf');
+}
+@font-face {
+  font-family: 'pacifico';
+  src: url('fonts/pacifico.ttf');
+}
+
+/*Begin styling*/
+
+body {
+  font-size: 16px;
+  color: #2d2d2d;
+  box-sizing: border-box;
+}
+h2 {
+  text-align: center;
+  font-family: 'pacifico';
+  color: #646464;
+  padding: 1em;
+}
+header img {
+  max-width: 60%;
+}
+section {
+  text-align: center;
+  background-image: url('images/kayak-bkgd.jpg');
+}
+header {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+img {
+  max-width: 100%;
+}
