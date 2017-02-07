@@ -25,12 +25,23 @@ body {
   font-size: 16px;
   color: #2d2d2d;
   box-sizing: border-box;
+  font-family: 'karla regular';
+  line-height: 1.75em;
+}
+main p {
+  margin-bottom: 2em;
 }
 h2 {
   text-align: center;
   font-family: 'pacifico';
   color: #646464;
   padding: 1em;
+  font-size: 3em;
+}
+header {
+  background-color: black;
+  text-align: center;
+  padding-top: 10px;
 }
 header img {
   max-width: 60%;
@@ -39,28 +50,126 @@ header img {
   text-align: center;
   background-image: url('images/kayak-bkgd.jpg');
   background-size: cover;
-  background-position: center center;
-  
+  background-position: center;
+  padding-bottom: 2em;
+
 }
-header {
-  background-color: black;
+.enjoy-the {
+  font-family: 'karla bold ';
+  text-transform: uppercase;
+}
+.great-outdoors {
+  font-family: 'pacifico';
+  color: white;
+  font-size: 4em;
+  padding: 0.5em;
+}
+.from-the-water {
+  font-family: 'pacifico';
+  color: white;
+  font-size: 3em;
+  padding: 0.5em;
+}
+.see {
+  color: white;
+  background: black;
+}
+button {
+  border-radius: 2em;
+  background-color: #e2574c;
+  border: 1px solid #e2574c;
+  color: white;
+  text-transform: uppercase;
 }
 nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 1em 0;
+  margin: 0 auto;
+  max-width: 70%;
 }
 nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
+  font-family: 'karla bold'
+}
+main {
+  margin: 0.5em;
+}
+.about {
+  text-align: center;
+}
+.about img {
+  box-shadow: 1px 0px 5px 1px #666;
 }
 img {
   max-width: 100%;
 }
+.rentals a {
+  color: #e2574c;
+}
+.rentals table, .rentals th, .rentals td {
+  border: 1px solid #b2b2b2;
+}
+.rentals table {
+  width: 100%;
+}
+.rentals th {
+  background-color: #e6e6e6;
+  font-weight: bold;
+}
+.rentals td {
+  text-align: center;
+}
+.rentals td:first-child {
+    text-align: left;
+}
+.location p {
+  text-align: center;
+}
 footer {
   background-color: #242424;
-}
-footer p {
   color: white;
+  text-align: center;
+  padding: 3em 2em;
+}
+.abc {
+  color: #b2b2b2;
+}
+footer p a {
+  color: white;
+}
+footer nav ul {
+  justify-content: center;
+}
+footer ul li {
+  margin: .5em;
+}
+.social-link-words {
+  display: none;
+}
+
+@media (min-width:600px) {
+  header {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  header img {
+    max-width: 40%;
+  }
+  nav ul {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    justify-content: flex-end;
+  }
+
 }
