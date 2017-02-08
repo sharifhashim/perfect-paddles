@@ -54,25 +54,35 @@ header img {
   padding-bottom: 2em;
 
 }
+.site-title span {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: .5em 0;
+}
 .enjoy-the {
-  font-family: 'karla bold ';
+  font-size: 1.5em;
+  font-family: 'karla regular';
   text-transform: uppercase;
+}
+.great-outdoors, .from-the-water {
+  text-shadow: 2px 2px 5px #999;
 }
 .great-outdoors {
   font-family: 'pacifico';
-  color: white;
-  font-size: 4em;
-  padding: 0.5em;
+  font-size: 3em;
 }
 .from-the-water {
   font-family: 'pacifico';
-  color: white;
-  font-size: 3em;
-  padding: 0.5em;
+  font-size: 2.5em;
 }
-.see {
+.banner p {
   color: white;
-  background: black;
+  background-color: rgba(0, 0, 0, .5);
+  text-align: center;
+  margin: 1.5em;
+  margin-bottom: 3em;
+
 }
 button {
   border-radius: 2em;
@@ -80,6 +90,8 @@ button {
   border: 1px solid #e2574c;
   color: white;
   text-transform: uppercase;
+  padding: 1em;
+  font-size: 1em;
 }
 nav ul {
   display: flex;
@@ -169,7 +181,13 @@ footer ul li {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 0;
-    justify-content: flex-end;
+    justify-content: space-around;
+  }
+  nav ul li {
+    margin: 0 .5em;
+  }
+  img {
+    width: 30%;
   }
 
 }
