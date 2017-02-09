@@ -1,6 +1,7 @@
 @font-face {
   font-family:'karla bold';
   src: url('fonts/karla-bold.ttf');
+  font-weight: bold;
 }
 @font-face {
   font-family: 'karla regular';
@@ -9,10 +10,13 @@
 @font-face {
   font-family: 'karla bold italic';
   src: url('fonts/karla-bolditalic.ttf');
+  font-weight: bold;
+  font-style: italic;
 }
 @font-face {
   font-family: 'karla italic';
   src: url('fonts/karla-italic.ttf');
+  font-style: italic;
 }
 @font-face {
   font-family: 'pacifico';
@@ -35,7 +39,7 @@ h2 {
   text-align: center;
   font-family: 'pacifico';
   color: #646464;
-  padding: 1em;
+  margin: 1em auto;
   font-size: 3em;
 }
 header {
@@ -46,13 +50,31 @@ header {
 header img {
   max-width: 60%;
 }
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em 0;
+  margin: 0 auto;
+  max-width: 70%;
+}
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'karla bold'
+}
 .banner {
   text-align: center;
-  background-image: url('images/kayak-bkgd.jpg');
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, .35) 0%,
+    rgba(0, 0, 0, .25) 100%
+    ),
+    url('images/kayak-bkgd.jpg');
   background-size: cover;
-  background-position: center;
-  padding-bottom: 2em;
-
+  background-position: top center;
+  padding: 4em 0;
 }
 .site-title span {
   display: block;
@@ -80,9 +102,9 @@ header img {
   color: white;
   background-color: rgba(0, 0, 0, .5);
   text-align: center;
-  margin: 1.5em;
+  margin: 1.5em auto;
   margin-bottom: 3em;
-
+  width: 75%;
 }
 button {
   border-radius: 2em;
@@ -93,20 +115,7 @@ button {
   padding: 1em;
   font-size: 1em;
 }
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1em 0;
-  margin: 0 auto;
-  max-width: 70%;
-}
-nav ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
-  font-family: 'karla bold'
-}
+
 main {
   margin: 0.5em;
 }
@@ -115,6 +124,7 @@ main {
 }
 .about img {
   box-shadow: 1px 0px 5px 1px #666;
+  margin: 0.5em 0;
 }
 img {
   max-width: 100%;
@@ -131,15 +141,21 @@ img {
 .rentals th {
   background-color: #e6e6e6;
   font-weight: bold;
+  padding: 0.5em 0;
 }
 .rentals td {
+  width: 33%;
   text-align: center;
+  padding: 0.5em;
 }
 .rentals td:first-child {
     text-align: left;
 }
 .location p {
   text-align: center;
+}
+iframe {
+  width: 100%;
 }
 footer {
   background-color: #242424;
@@ -186,8 +202,10 @@ footer ul li {
   nav ul li {
     margin: 0 .5em;
   }
+  .banner p {
+    width: 39%;
+  }
   img {
     width: 30%;
   }
-
 }
