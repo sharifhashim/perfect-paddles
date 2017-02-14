@@ -52,13 +52,12 @@ header img {
 }
 nav ul {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   padding: 1em 0;
   margin: 0 auto;
   max-width: 70%;
 }
-nav ul li a {
+.nav-menu {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -88,14 +87,13 @@ nav ul li a {
   text-transform: uppercase;
 }
 .great-outdoors, .from-the-water {
+  font-family: 'pacifico';
   text-shadow: 2px 2px 5px #999;
 }
 .great-outdoors {
-  font-family: 'pacifico';
   font-size: 3em;
 }
 .from-the-water {
-  font-family: 'pacifico';
   font-size: 2.5em;
 }
 .banner p {
@@ -107,6 +105,7 @@ nav ul li a {
   width: 75%;
 }
 button {
+  display: block;
   border-radius: 2em;
   background-color: #e2574c;
   border: 1px solid #e2574c;
@@ -114,6 +113,7 @@ button {
   text-transform: uppercase;
   padding: 1em;
   font-size: 1em;
+  margin: 0 auto;
 }
 
 main {
@@ -163,7 +163,10 @@ footer {
   text-align: center;
   padding: 3em 2em;
 }
-.abc {
+footer p {
+  margin: 0.5em 1.5em .5em;
+}
+.grey-text {
   color: #b2b2b2;
 }
 footer p a {
@@ -174,6 +177,13 @@ footer nav ul {
 }
 footer ul li {
   margin: .5em;
+}
+p {
+  line-height: 2em;
+  margin-bottom: 2em;
+}
+footer nav ul li i {
+  color: white;
 }
 .social-link-words {
   display: none;
@@ -192,20 +202,78 @@ footer ul li {
   header img {
     max-width: 40%;
   }
-  nav ul {
+  nav {
     display: flex;
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 0;
-    justify-content: space-around;
+    justify-content: flex-end;
+  }
+  nav ul {
+    width: auto;
+    max-width: auto;
+    margin: 0;
   }
   nav ul li {
     margin: 0 .5em;
   }
   .banner p {
-    width: 39%;
+    display: inline-block;
+    width: auto;
   }
   img {
     width: 30%;
+  }
+  .rentals {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .rentals h2 {
+    width: 100%;
+  }
+  .rentals article, .rentals table {
+    width: 49%;
+  }
+  footer {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  footer article {
+    text-align: left;
+    max-width: 40%;
+  }
+  footer nav ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: auto;
+  }
+  footer nav ul li {
+    margin: .25em .5em;
+  }
+  .social-link-words {
+    display: inline;
+    padding-left: 0.35em;
+    color: white
+  }
+}
+@media (min-width: 1140px) {
+  .about p {
+    max-width: 40%;
+    margin: 1.5em auto;
+  }
+  footer article {
+    max-width: 30%;
+  }
+  .rentals table {
+    width: 40%;
   }
 }
