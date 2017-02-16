@@ -1,21 +1,21 @@
 @font-face {
   font-family:'karla bold';
-  src: url('fonts/Karla-bold.ttf') format('truetype');
+  src: url('fonts/Karla-Bold.ttf') format('truetype');
   font-weight: bold;
 }
 @font-face {
   font-family: 'karla regular';
-  src: url('fonts/Karla-regular.ttf') format('truetype');
+  src: url('fonts/Karla-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'karla bold italic';
-  src: url('fonts/Karla-bolditalic.ttf') format('truetype');
+  src: url('fonts/Karla-Bolditalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
   font-family: 'karla italic';
-  src: url('fonts/Karla-italic.ttf') format('truetype');
+  src: url('fonts/Karla-Italic.ttf') format('truetype');
   font-style: italic;
 }
 @font-face {
