@@ -4,7 +4,7 @@
   font-weight: bold;
 }
 @font-face {
-  font-family: 'karla regular';
+  font-family: 'Karla Regular';
   src: url('fonts/Karla-Regular.ttf') format('truetype');
 }
 @font-face {
@@ -29,7 +29,7 @@ body {
   font-size: 16px;
   color: #2d2d2d;
   box-sizing: border-box;
-  font-family: 'karla regular';
+  font-family: 'Karla Regular';
   line-height: 1.75em;
 }
 main p {
