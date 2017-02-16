@@ -1,26 +1,26 @@
 @font-face {
   font-family:'karla bold';
-  src: url('fonts/karla-bold.ttf');
+  src: url('fonts/Karla-Bold.ttf') format('truetype');
   font-weight: bold;
 }
 @font-face {
-  font-family: 'karla regular';
-  src: url('fonts/karla-regular.ttf');
+  font-family: 'Karla Regular';
+  src: url('fonts/Karla-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'karla bold italic';
-  src: url('fonts/karla-bolditalic.ttf');
+  src: url('fonts/Karla-Bolditalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
   font-family: 'karla italic';
-  src: url('fonts/karla-italic.ttf');
+  src: url('fonts/Karla-Italic.ttf') format('truetype');
   font-style: italic;
 }
 @font-face {
   font-family: 'pacifico';
-  src: url('fonts/pacifico.ttf');
+  src: url('fonts/Pacifico.ttf') format('truetype');
 }
 
 /*Begin styling*/
@@ -29,7 +29,7 @@ body {
   font-size: 16px;
   color: #2d2d2d;
   box-sizing: border-box;
-  font-family: 'karla regular';
+  font-family: 'Karla Regular';
   line-height: 1.75em;
 }
 main p {
